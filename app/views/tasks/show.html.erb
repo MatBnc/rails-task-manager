@@ -1,0 +1,10 @@
+<h1><%= @task.title %></h1>
+<p><%= @task.details %></p>
+<p><%= @task.completed == true ?
+"This task is complete" : "You still have to complete this" %></p>
+
+<br>
+<%= link_to "Edit", "/tasks/#{@task.id}/edit" %>
+<br>
+<br>
+<%= link_to "Go back", "/tasks" %>
